@@ -23,7 +23,7 @@ class MainActivity : AppCompatActivity() {
             }
 
             override fun onResponse(call: Call<MultipleResource>, response: Response<MultipleResource>) {
-                Log.d(TAG, "call response : ${response}")
+                Log.d(TAG, "call response : ${response.body().toString()}")
             }
 
         })
